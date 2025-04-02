@@ -1,0 +1,14 @@
+{
+    "name": "PiCoLabSensors",
+    "keywords": "PiCoLabSensors, PiCoLab, Arduino",
+    "description": "An Arduino library to PiCoLabSensors.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PicoElectronic/PiCoLabSensors.git"
+    },
+    "version": "1.0.0",
+    "exclude": "tests",
+    "examples": "examples/*/*.ino",
+    "frameworks": "arduino",
+    "platforms": "*"
+}
