@@ -5,5 +5,6 @@
 
 void writeinto7segment(int);
 void clear7segment();
+void writedotinto7segment();
 
 #endif

@@ -13,7 +13,7 @@ void writeinto7segment(int x){
         case 6: Wire.write(0x7D); break; // 6
         case 7: Wire.write(0x07); break; // 7
         case 8: Wire.write(0x7F); break; // 8
-        case 9: Wire.write(0x6F); break; // 9
+        case 9: Wire.write(0x6F); break; // 9 
     }
     Wire.endTransmission();    // stop transmitting
 }
@@ -21,5 +21,11 @@ void writeinto7segment(int x){
 void clear7segment(){
     Wire.beginTransmission(0x21); // transmit to PCF8574
     Wire.write(0x00); // clear the display
+    Wire.endTransmission();    // stop transmitting
+}
+
+void writedotinto7segment(){
+    Wire.beginTransmission(0x21); // transmit to PCF8574
+    Wire.write(0x01); // write dot into 7 segment
     Wire.endTransmission();    // stop transmitting
 }
